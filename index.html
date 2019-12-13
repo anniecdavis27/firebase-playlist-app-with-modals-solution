@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Firebase Playlist App</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- add jQuery Modal css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <h2> Firebase Playlist Application </h2>
+
+      <div class="main">
+        <div class="form-container">
+          <form id="song-form">
+            <p>Add Song to Playlist</p>
+            <input type="text" id="song-name" placeholder="Enter song name" />
+            <input type="text" id="artist-name" placeholder="Enter artist name" />
+            <input type="text" id="genre-name" placeholder="Enter genre name" />
+            <button>Add</button>
+          </form>
+        </div>
+
+        <div class="song-container">
+          <h2>Songs</h2>
+
+          <div class="songs">
+
+            <!-- hardcoded playlist items -->
+            <!-- <div class="song" id="123">
+              <div class="song-name">Redemption Song</div>
+              <div class="artist-name">Bob Marley</div>
+
+              <div class="actions">
+                <button class="show-song">details</button>
+                <button class="edit-song">edit</button>
+                <button class="delete-song">delete</button>
+              </div>
+            </div>
+
+            <div class="song" id="456">
+              <div class="song-name">Irreplaceable</div>
+              <div class="artist-name">Beyonce</div>
+
+              <div class="actions">
+                <button class="show-song">details</button>
+                <button class="edit-song">edit</button>
+                <button class="delete-song">delete</button>
+              </div>
+            </div>
+
+            <div class="song" id="789">
+              <div class="song-name">A Change Gonna Come</div>
+              <div class="artist-name">Sam Cooke</div>
+
+              <div class="actions">
+                <button class="show-song">details</button>
+                <button class="edit-song">edit</button>
+                <button class="delete-song">delete</button>
+              </div>
+            </div> -->
+            <!-- end of hardcoded playlist items -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="song-modal" class="modal">
+      <p class="artist-name"></p>
+      <p class="song-name"></p>
+      <p class="genre-name"></p>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+
+    <!-- Add jQuery Modal library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+    <!-- Add firebase libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-firestore.js"></script>
+    <!-- firebase libraries -->
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

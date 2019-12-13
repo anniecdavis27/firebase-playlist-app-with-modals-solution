@@ -1,0 +1,101 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  padding-top: 50px;
+  width: 1080px;
+  margin: 0 auto;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+}
+
+.container > h2 {
+  margin-bottom: 40px;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 100vh
+}
+
+.form-container, .song-container {
+  width: 50%;
+  display: flex;
+}
+
+.form-container {
+  border-right: 1px solid gray;
+}
+
+.song-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+#song-form, #update-song-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  font-size: 1.2rem;
+  margin-right: 20px;
+  font-weight: bold;
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: fit-content;
+}
+
+#song-form input, #update-song-form input {
+  padding: 5px;
+  width: 300px;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+#song-form button, #update-song-form button {
+  font-weight: bold;
+  background: #818194;
+  color: white;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 7px;
+}
+
+.songs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.song {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  width: 75%;
+  margin-bottom: 20px;
+}
+
+.song .song-title {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.song .actions {
+  margin-top: 5px;
+}
+
+.cancel-edit {
+  margin-top: 5px;
+}
